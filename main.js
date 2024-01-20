@@ -24,7 +24,7 @@ function createCountriesElement(country) {
   countryElement.classList.add('country');
 
   countryElement.innerHTML = `
-     <a href="detailedinfo.html?country=${country.name}">
+     <a href="detailedInfo.html?country=${country.name}">
      <img
        src="${country.flags.png}"
        alt="${country.name} Flag"
