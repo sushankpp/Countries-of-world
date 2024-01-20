@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coutries of world</title>
+  </head>
+  <body id="body">
+    <div class="header">
+      <h1>Where in the world?</h1>
+      <div class="dark-mode" id="dark-mode">
+        <img src="Images/dark-mode.svg" class="dark-mode-img" alt="dark mode" />
+        <p class="dark">Dark Mode</p>
+      </div>
+    </div>
+
+    <div class="filter-div">
+      <div class="search-input">
+        <img src="Images/search.svg" alt="search-icon" class="search-icon" />
+        <input
+          type="text"
+          name="search"
+          class="search"
+          id="search"
+          placeholder="Search for a country...."
+        />
+      </div>
+
+      <select name="region" id="SelectRegion" class="SelectRegion">
+        <option value="Filter by Region" selected hidden>
+          Filter by Region
+        </option>
+        <option value="Africa">Africa</option>
+        <option value="America">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+
+    <main class="countries-container" id="countries-container"></main>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
